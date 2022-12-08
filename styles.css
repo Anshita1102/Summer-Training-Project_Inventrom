@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #0a0a0a;
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+/* Navigation Section */
+
+header {
+	padding:10px 10%;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+	top: 0;
+	left: 0;
+	position: sticky;
+	background-color: #FFFFFF;	
+}
+
+.navbar a img{
+	cursor: pointer;
+}
+
+.navbar {
+    min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: inherit;
+	transition: 0.5s ease;
+}
+
+.nav-link:hover{
+	color: #139139;
+	font-weight: 600;
+}
+
+.nav-item{
+	margin: 0 2em;
+}
+
+.hamburger {
+    display: none;
+	cursor: pointer;
+}
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	transition: all 0.3s ease-in-out;
+	background-color: #139139;
+}
+
+/* Main/Hero Section */
+
+.hero-image{
+	background: url("images/hero-background-image.png");
+	height: 26em;
+	background-repeat: repeat-y repeat-x;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20%;
+	padding-top: 200px;
+}
+
+.hero-text {
+    width: 70%;
+	color: #FFFFFF;
+    font-size: 2em;
+    font-weight: 500;
+	text-align: center;
+}
+
+.hero-link a{
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #FFFFFF;
+	border-radius: 30px;
+	border: 1px solid white;
+	font-weight: 600;
+	transition: 0.7s ease;
+}
+
+.hero-link a:hover {
+	background-color: #FFFFFF;
+	color: #139139;
+}
+
+/* About Section */
+
+#about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+	margin: 0 10%;
+}
+
+.about-card{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8vw;
+}
+
+.about-card-vision, .about-card-mission{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+}
+
+.about-title, .awards-title, .contact-title{
+	font-size: 2em;
+	font-weight: 600;
+	color: #139139;
+}
+
+.about-description{
+	width: 80%;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.about-card-vision-image img, .about-card-mission-image img{
+	width: 400px;
+	height: 300px;
+}
+
+.about-card-vision-title, .about-card-mission-title {
+	font-weight: 500;
+	padding: 10px 0;
+}
+
+.about-card-vision-text, .about-card-mission-text {
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: center;
+	width: 400px;
+}
+
+/* Awards Section */
+
+#awards{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px 0;
+	background-color: rgb(240,240,240);
+}
+
+
+.awards-card{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.awards-card-inner{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.awards-card-inner img{
+	width: 280px;
+	height: 200px;
+}
+
+.awards-card-inner-title span{
+	border-bottom: 1px dashed #0a0a0a;
+	padding: 5px 10px;
+	font-weight: 500;
+}
+
+.awards-card-inner-description{
+	text-align: center;
+	font-size: 0.8em;
+	color: #808080;
+	margin: 25px 0;
+	width: 80%;
+}
+
+/* Contact Section */
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px 0;
+	margin: 0 10%;
+}
+
+.contact-title{
+	margin-bottom: 50px;
+}
+
+.contact-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 80px;
+}
+
+.contact-form{
+	width: 100%;
+}
+
+.contact-details{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 80px;
+	width: 80%
+}
+
+.contact-location-title, .contact-number-title{
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.contact-location, .contact-number{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 45px;
+}
+
+.contact-location-detail, .contact-number-detail{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+.contact-location-detail-title{
+	font-weight: 500;
+}
+
+.contact-location-detail-address{
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+.contact-number-detail-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	font-size: 0.9em;
+}
+
+/* Footer Section */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #139139;
+    padding:0 10%;
+    height: 70px;
+}
+
+.copyright{
+    color: white;
+    font-weight: 500;
+}
+
+.social-media-icons a{
+    margin: 0 25px;
+}
+
+.social-media-icons img{
+	width: 24px;
+	height: 24px;
+}
+	
+.back-top img{
+	width: 24px;
+	height: 24px;
+}
+
+
+
+
+/* About Section - Rearrange Cards */
+
+@media (max-width: 920px){
+.about-card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+	
+	
+/*Media Query for tablet  */
+
+@media (min-width: 401px) and (max-width: 768px){
+
+	/* Navigation Section */
+
+	.hamburger {
+		display: block;
+	}
+		
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+		
+	.nav-menu{
+		position:fixed;
+		right: -120%;
+		top: 70px;
+		box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+		gap: 0;
+		flex-direction: column;
+		background-color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+		
+	.nav-item{
+		margin: 14px 0;
+	}
+		
+	.nav-menu.active{
+		right: 0;
+	}
+
+		
+	.hero-text{
+		font-size: 1.2em;
+		font-weight: 400;
+	}
+		
+	.hero-link a{
+		font-size:0.9em;
+		font-weight: 400;
+	}
+		
+	/* About Section */
+
+	.about-title, .awards-title, .contact-title{
+		font-size: 1.5em;
+	}
+
+	.about-description{
+		font-size: 0.9em;
+		width: 90%;
+	}
+		
+	.about-card-vision-image img, .about-card-mission-image img{
+		width: 320px;
+		height: 270px;
+	}
+
+	.about-card-vision-text, .about-card-mission-text {
+		font-size: 0.8em;
+		width: 320px;
+	}
+
+	/* Contact Section */
+		
+	.contact-info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+		
+	.contact-details{
+		width: 100%;
+	}
+		
+	.contact-location-title, .contact-number-title{
+		align-self: center;
+	}
+	
+	/* Footer Section */
+
+	.copyright{
+		font-size: 0.9em;
+		font-weight: 400;
+	}
+
+	.social-media-icons a{
+		margin: 0 10px;
+	}
+	
+}
+
+
+
+
+
+/* Media Query for Mobile */
+
+@media (max-width: 400px){
+
+	/* Navigation Section */
+
+	.hamburger {
+		display: block;
+	}
+		
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+		
+	.nav-menu{
+		position:fixed;
+		right: -120%;
+		top: 70px;
+		box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+		gap: 0;
+		flex-direction: column;
+		background-color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+		
+	.nav-item{
+		margin: 14px 0;
+	}
+		
+	.nav-menu.active{
+		right: 0;
+	}
+		
+	.hero-text{
+		font-size: 1em;
+		font-weight: 400;
+		}
+
+	.hero-link a{
+		font-size: 0.8em;
+		font-weight: 300;
+	}
+
+	/* About Section */
+		
+	.about-title, .awards-title, .contact-title{
+		font-size: 1.2em;
+	}
+
+	.about-description{
+		font-size: 0.85em;
+	}
+		
+	.about-card-vision-image img, .about-card-mission-image img{
+		width: 270px;
+		height: 170px;
+	}
+
+	.about-card-vision-text, .about-card-mission-text {
+		font-size: 0.7em;
+		width: 270px;
+	}
+
+	.about-card-vision-title, .about-card-mission-title {
+		font-size: 0.9em;
+	}
+
+	/* Contact Section */
+		
+	.contact-info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+
+	.contact-details{
+		font-size: 0.85em;
+		gap: 30px;
+		width: 100%;
+	}
+		
+	.contact-location, .contact-number{
+		gap: 20px;
+	}
+		
+	.contact-location-title, .contact-number-title{
+		font-weight: 500;
+		align-self: center;
+	}
+
+	.contact-location-detail-address, .contact-number-detail-info{
+		font-size: 0.85em;
+	}
+
+	/* Footer Section */
+		
+	footer{
+		flex-wrap: wrap;
+		justify-content: center;
+	}	
+
+	.copyright{
+		font-size: 0.85em;
+		font-weight: 300;
+	}
+
+	.social-media-icons a{
+		margin: 0 5px;
+	}
+		
+	.social-media-icons img{
+		width: 18px;
+		height: 18px;
+	}
+		
+	.back-top img{
+		width: 18px;
+		height: 18px;
+		margin: 0 0 0 15px;
+	}
+
+}
