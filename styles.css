@@ -378,7 +378,8 @@ footer{
 		right: 0;
 	}
 
-		
+	/* Main/Hero Section */
+	
 	.hero-text{
 		font-size: 1.2em;
 		font-weight: 400;
@@ -486,6 +487,8 @@ footer{
 	.nav-menu.active{
 		right: 0;
 	}
+
+	/* Main/Hero Section */
 		
 	.hero-text{
 		font-size: 1em;
